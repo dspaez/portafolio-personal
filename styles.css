@@ -1,0 +1,394 @@
+/* Reset y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-image i {
+  font-size: 60px;
+  color: white;
+}
+
+.profile-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.profile-info h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95em;
+}
+
+.contact-item i {
+  font-size: 1.1em;
+  width: 20px;
+}
+
+/* Layout principal */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #f8f9fa;
+  padding: 40px 30px;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* Content */
+.content {
+  padding: 40px;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 35px;
+}
+
+.section-title {
+  font-size: 1.4em;
+  color: #667eea;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #667eea;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title i {
+  font-size: 1.2em;
+}
+
+/* Perfil profesional */
+.profile-text {
+  text-align: justify;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Habilidades */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95em;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Idiomas */
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.language-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.language-level {
+  color: #667eea;
+  font-weight: 500;
+}
+
+/* Intereses */
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interest-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.interest-tag i {
+  font-size: 1em;
+}
+
+/* Timeline (Experiencia y Educación) */
+.timeline-item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  border-left: 3px solid #667eea;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  background: #667eea;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-date {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.timeline-title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  color: #764ba2;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  color: #555;
+  line-height: 1.8;
+}
+
+.timeline-description li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* Proyectos */
+.project-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.project-title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.project-tech {
+  color: #667eea;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Referencias */
+.references-text {
+  color: #555;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 30px 20px;
+  }
+
+  .sidebar,
+  .content {
+    padding: 30px 20px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.8em;
+  }
+
+  .profile-info h2 {
+    font-size: 1.1em;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .footer {
+    background: transparent;
+    color: #333;
+    border-top: 1px solid #ddd;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
